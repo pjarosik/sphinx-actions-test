@@ -8,5 +8,5 @@ The us4R-lite™ is connected using a certified Thunderbolt-3 or PCIe cable to a
 
 ![Peripheral mode with external Host PC connected through Thunderbolt RL-2020 model](img/peripheral.png)
 
-![Peripheral mode with external Host PC connected through PCIe RL-2021 mode](img/peripheral-pc.png)
+![Peripheral mode with external Host PC connected through PCIe RL-2021 mode](img/peripheral_pc.png)
 
