@@ -3,10 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Us4R/Us4R-lite documentation.
+Us4R & Us4R-lite User Manual
 ==================================================
-
-
 
 .. toctree::
    :maxdepth: 2
@@ -15,12 +13,3 @@ Us4R/Us4R-lite documentation.
    content/safety
    content/warranty
    content/system_overview
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
