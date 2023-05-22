@@ -1,0 +1,4 @@
+sphinx_rtd_theme==0.5.0
+myst-parser
+piccolo-theme
+sphinx-book-theme
