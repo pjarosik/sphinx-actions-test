@@ -2,8 +2,8 @@ name: CI
 
 on:
   push:
-    branches:    
-      - master
+    tags:    
+      - "v*.*.*"
 
 jobs:
   build:
@@ -22,10 +22,9 @@ jobs:
         pre-build-command: "apt-get --allow-releaseinfo-change update -y  && apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk"
         build-command: "make latexpdf"
         docs-folder: "docs/"
-    - uses: actions/upload-artifact@v1
+    - uses: softprops/action-gh-release@v1
       with:
-        name: Documentation
-        path: docs/_build/latex/user_manual.pdf
+        files: docs/_build/latex/user_manual.pdf
     # Publish docs on GH Pages.
     - name: Commit documentation changes
       run: |
