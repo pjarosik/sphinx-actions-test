@@ -13,11 +13,11 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     # HTML
-    - uses: ammaraskar/sphinx-action@master
+    - uses: us4useu/sphinx-action@master
       with:
         docs-folder: "docs/"
     # PDF.
-    - uses: ammaraskar/sphinx-action@master
+    - uses: us4useu/sphinx-action@master
       with:
         pre-build-command: "apt-get update -y && apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk"
         build-command: "make latexpdf"
