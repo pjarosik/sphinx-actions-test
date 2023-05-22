@@ -13,12 +13,14 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+from datetime import datetime
 
+current_year = datetime.now().year
 
 # -- Project information -----------------------------------------------------
 
 project = 'Us4R/Us4R-lite User Manual'
-copyright = 'us4us Ltd'
+copyright = f"{current_year}, us4us Ltd"
 author = 'us4us Ltd'
 
 
@@ -40,13 +42,14 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+numfig = True
 
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
