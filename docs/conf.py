@@ -42,8 +42,6 @@ html_theme_options = {
     # Set the name of the project to appear in the sidebar
 }
 
-'logo_only': False,
-
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
