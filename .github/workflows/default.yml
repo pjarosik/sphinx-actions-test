@@ -21,7 +21,7 @@ jobs:
     # PDF.
     - uses: us4useu/sphinx-action@master
       with:
-        pre-build-command: "apt-get update -y && apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk"
+        pre-build-command: "apt-get --allow-releaseinfo-change update -y  && apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk"
         build-command: "make latexpdf"
         docs-folder: "docs/"
     - uses: actions/upload-artifact@v1
