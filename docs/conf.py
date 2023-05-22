@@ -14,6 +14,10 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 from datetime import datetime
+import guzzle_sphinx_theme
+
+html_theme_path = guzzle_sphinx_theme.html_theme_path()
+html_theme = 'guzzle_sphinx_theme'
 
 current_year = datetime.now().year
 
@@ -30,8 +34,14 @@ author = 'us4us Ltd'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'myst_parser'
+    "myst_parser",
+    "guzzle_sphinx_theme"
 ]
+
+html_theme_options = {
+    # Set the name of the project to appear in the sidebar
+    "project_nav_name": "Us4R & Us4R-Lite User Manual",
+}
 
 
 # Add any paths that contain templates here, relative to this directory.
@@ -43,13 +53,6 @@ templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 numfig = True
-
-# -- Options for HTML output -------------------------------------------------
-
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-#
-html_theme = 'sphinx_rtd_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
