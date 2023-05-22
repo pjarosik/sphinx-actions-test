@@ -13,7 +13,7 @@ Us4R/Us4R-lite documentation.
    :caption: User Manual
 
    content/safety
-   content/waranty
+   content/warranty
    content/system_overview
 
 
