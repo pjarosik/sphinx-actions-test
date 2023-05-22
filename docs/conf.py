@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'No Errors Test Project'
-copyright = '2019, sphinx-action Test Suite'
-author = 'sphinx-action Test Suite'
+project = 'Us4R/Us4R-lite User Manual'
+copyright = 'us4us Ltd'
+author = 'us4us Ltd'
 
 
 # -- General configuration ---------------------------------------------------
@@ -52,3 +52,6 @@ html_theme = 'alabaster'
 html_static_path = ['_static']
 
 master_doc = 'index'
+
+latex_documents = [('index', 'user_manual.tex', project, author, 'manual')]
+
