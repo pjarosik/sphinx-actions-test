@@ -3,3 +3,4 @@ myst-parser
 piccolo-theme
 sphinx-book-theme
 guzzle_sphinx_theme
+sphinxcontrib-jquery

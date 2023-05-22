@@ -35,7 +35,8 @@ author = 'us4us Ltd'
 # ones.
 extensions = [
     "myst_parser",
-    "guzzle_sphinx_theme"
+    "guzzle_sphinx_theme",
+    "sphinxcontrib.jquery"
 ]
 
 html_theme_options = {
