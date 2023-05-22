@@ -14,10 +14,9 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 from datetime import datetime
-import guzzle_sphinx_theme
 
-html_theme_path = guzzle_sphinx_theme.html_theme_path()
-html_theme = 'guzzle_sphinx_theme'
+html_theme = 'sphinx_rtd_theme'
+html_logo = "https://us4us.eu/wp-content/uploads/2018/10/us4us-logo-white.png"
 
 current_year = datetime.now().year
 
@@ -35,14 +34,15 @@ author = 'us4us Ltd'
 # ones.
 extensions = [
     "myst_parser",
-    "guzzle_sphinx_theme",
     "sphinxcontrib.jquery"
 ]
 
 html_theme_options = {
+    'logo_only': True,
     # Set the name of the project to appear in the sidebar
-    "project_nav_name": "Us4R & Us4R-Lite User Manual",
 }
+
+'logo_only': False,
 
 
 # Add any paths that contain templates here, relative to this directory.
