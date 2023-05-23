@@ -62,3 +62,21 @@ master_doc = 'index'
 
 latex_documents = [('index', 'user_manual.tex', project, author, 'manual')]
 
+latex_elements = {
+     'preamble': """
+\makeatletter
+  \fancypagestyle{normal}{
+    \fancyhf{}
+    \fancyfoot[LE,RO]{{\py@HeaderFamily\thepage}}
+    \fancyfoot[LO]{{\py@HeaderFamily\nouppercase{\rightmark}}}
+    \fancyfoot[RE]{{\py@HeaderFamily\nouppercase{\leftmark}}}
+    \fancyhead[LE,RO]{{\py@HeaderFamily \@title, \py@release}}
+    \renewcommand{\headrulewidth}{0.4pt}
+    \renewcommand{\footrulewidth}{0.4pt}
+    % define chaptermark with \@chappos when \@chappos is available for Japanese
+    \spx@ifundefined{@chappos}{}
+      {\def\chaptermark##1{\markboth{\@chapapp\space\thechapter\space\@chappos\space ##1}{}}}
+  }
+\makeatother
+""",
+}
